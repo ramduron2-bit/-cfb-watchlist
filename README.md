@@ -1,2 +1,101 @@
 # -cfb-watchlist
 🏈
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="CFB Watchlist">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>CFB Watchlist</title>
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="header">
+      <div>
+        <div class="eyebrow">COLLEGE FOOTBALL</div>
+        <h1>What should I watch?</h1>
+        <p id="weekLabel">Loading this week...</p>
+      </div>
+
+      <button id="refreshBtn" class="refresh" aria-label="Refresh">
+        ↻
+      </button>
+    </header>
+
+
+    <div id="installBanner" class="install-banner">
+
+      <div>
+        <strong>Make this an iPhone app</strong>
+        <span>Safari → Share → Add to Home Screen</span>
+      </div>
+
+      <button id="dismissInstall">×</button>
+
+    </div>
+
+
+    <nav class="week-nav">
+
+      <button id="prevWeek">‹</button>
+
+      <button id="thisWeek">
+        This week
+      </button>
+
+      <button id="nextWeek">›</button>
+
+    </nav>
+
+
+    <!-- USC ALWAYS FIRST -->
+
+    <section id="uscCard"></section>
+
+
+    <div class="section-header">
+
+      <h2>🔥 Must Watch</h2>
+
+      <span id="updated"></span>
+
+    </div>
+
+
+    <section id="games"></section>
+
+
+    <details class="all-games">
+
+      <summary>Show all games</summary>
+
+      <div id="allGamesList"></div>
+
+    </details>
+
+
+    <footer>
+
+      <span>Pacific Time</span>
+      <span>•</span>
+      <span>USC stays #1</span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
